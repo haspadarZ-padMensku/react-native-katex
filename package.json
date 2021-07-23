@@ -1,38 +1,39 @@
 {
   "name": "react-native-katex",
-  "version": "0.4.3",
-  "description": "WebView bundled KaTeX",
+  "version": "0.4.4",
+  "description": "Show KaTeX in React Native using WebView with auto height",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
     "clear": "rm -rf build src/katex-script.* src/katex-style.*",
     "compile": "node scripts/prebuild.js",
     "build": "yarn clear && yarn compile && tsc",
-    "release": "yarn build && npm version minor && npm publish"
+    "prepare": "yarn build",
+    "release": "npm version minor && npm publish"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/3axap4eHko/react-native-katex.git"
+    "url": "git+https://github.com/haspadarZ-padMensku/react-native-katex.git"
   },
   "keywords": [],
-  "author": "Ivan Zakharchanka",
+  "author": "Ivan Zakharchanka, Denis Goncharov",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/3axap4eHko/react-native-katex/issues"
+    "url": "https://github.com/haspadarZ-padMensku/react-native-katex/issues"
   },
-  "homepage": "https://github.com/3axap4eHko/react-native-katex#readme",
+  "homepage": "https://github.com/haspadarZ-padMensku/react-native-katex#readme",
   "dependencies": {
-    "react-native-webview": "^9.3.0"
+    "react-native-webview": "^11.6.5"
   },
   "peerDependencies": {
-    "react": "16.*",
+    "react": "17.*",
     "react-native": "0.*"
   },
   "devDependencies": {
-    "@types/react": "^16.9.34",
-    "@types/react-native": "^0.62.4",
+    "@types/react": "^17.*",
+    "@types/react-native": "^0.64.*",
     "katex": "^0.11.1",
-    "react": "^16.13.1",
+    "react": "17.0.1",
     "react-native": "^0.62",
     "typescript": "^3.8.3"
   }
