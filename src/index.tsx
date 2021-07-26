@@ -70,12 +70,14 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflowX: auto;
+  overflow: auto;
 }
 .katex {
+  font-size: 24px;
   margin: 0;
+  padding: 8px;
   display: flex;
-  overflowX: auto;
+  overflow: auto;
 }
 `;
 
