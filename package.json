@@ -1,6 +1,6 @@
 {
   "name": "react-native-katext",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "description": "Show KaTeX in React Native using WebView with auto height",
   "main": "build/index.js",
   "types": "build/index.d.ts",
