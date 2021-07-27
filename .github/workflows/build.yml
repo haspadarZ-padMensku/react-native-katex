@@ -16,14 +16,14 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           registry-url: https://registry.npmjs.org/
-      - name: Install dependecies
+      - name: Install dependencies
         run: |
             yarn
       - name: Run build process
         run: |
             yarn build
-#      - name: Publish
-#        run: |
-#            npm publish
-#        env:
-#          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+      - name: Publish
+        run: |
+            npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
