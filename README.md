@@ -17,7 +17,7 @@
 
 ```javascript
 import { StyleSheet } from 'react-native';
-import Katex from 'react-native-katex';
+import Katex from 'react-native-katext';
 
 const styles = StyleSheet.create({
   katex: {

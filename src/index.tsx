@@ -88,7 +88,6 @@ export interface KatexProps extends ContentOptions {
   onError: any;
   injectedJavaScript?: any;
   onMessage?: any;
-  androidLayerType?: "none" | "software" | "hardware";
 }
 
 export default function Katex({
@@ -98,7 +97,6 @@ export default function Katex({
   onError,
   injectedJavaScript,
   onMessage,
-  androidLayerType,
   ...options
 }: KatexProps) {
   const [height, setHeight] = useState(0);
@@ -136,10 +134,8 @@ export default function Katex({
       onMessage={onMessage || handleMessage}
       javaScriptEnabled={true}
       scrollEnabled={false}
-      useWebKit={true}
       automaticallyAdjustContentInsets={false}
       scalesPageToFit={false}
-      androidLayerType={androidLayerType}
     />
   );
 }
@@ -156,5 +152,4 @@ Katex.defaultProps = {
   colorIsTextColor: false,
   onLoad: () => { },
   onError: (e: any) => console.log(e),
-  androidLayerType: 'none'
 };
